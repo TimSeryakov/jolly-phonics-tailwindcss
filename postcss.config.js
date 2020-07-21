@@ -8,7 +8,7 @@ const cssnano = require('cssnano')({
 module.exports = {
   plugins: [
     require("postcss-import"),
-    require('tailwindcss')('assets/tailwind.config.js'),
+    require('tailwindcss')('tailwind.config.js'),
     ...process.env.NODE_ENV === 'production' ? [cssnano] : [],
     require('autoprefixer'),
   ],

@@ -1,17 +1,49 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TailwindCSS + PostCSS + BrowserSync boilerplate</title>
+  <title>Jolly Phonics</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
-  <div class="w-1/2 mx-auto rounded-lg bg-primary">
-    <h1 class="text-2xl bg-blue-400 rounded-full">
-      TailwindCSS + PostCSS + BrowserSync boilerplate
-    </h1>
-    <p class="font-open-sans">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eius facere sequi dolorem dignissimos ipsam, quo, rerum recusandae nemo voluptates ducimus repudiandae asperiores consequuntur adipisci obcaecati molestiae iusto tempore ullam? Iste, non aspernatur, odio ab saepe magnam libero cumque voluptate pariatur atque labore suscipit minima nihil omnis inventore beatae rerum.</p>
-  </div>
-  <script src="assets/index.js"></script>
+  <!-- HEADER > NAVIGATION-->
+  <header class="w-full h-20 mb-1 shadow-md">
+    <nav class="container flex items-center justify-between h-full">
+      <img src="assets/img/logo.svg" alt="Jolly Phonics Logotype">
+      <ul class="flex">
+        <li><a href="#" class="py-4 mx-8 font-extrabold text-j-gray">About</a></li>
+        <li><a href="#" class="py-4 mx-8 font-extrabold text-j-gray">Contact</a></li>
+        <li><a href="#" class="px-8 py-4 ml-4 font-extrabold text-white rounded-full bg-j-primary">Sign up</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ------------------- -->
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="bg-no-repeat bg-cover hero h-hero">
+      <div class="container flex flex-col items-center justify-center h-full text-center">
+        <h1 class="w-10/12 text-6xl font-extrabold leading-tight text-j-gray-dark">Measure Jolly Phonics projects performance</h1>
+        <h3 class="w-9/12 mt-8 text-2xl font-bold leading-9 text-j-gray">High fidelity monitoring and mentoring system at scale, in any context</h3>
+        <a href="#" class="px-24 py-3 mt-8 font-extrabold text-white rounded-full bg-j-primary">Sign up</a>
+      </div>
+    </section>
+    <div class="bg-j-primary">
+      <div class="container flex items-center justify-center h-40">
+        <h3 class="text-2xl font-bold text-white">Developed by Jolly Technologies and Jolly Futures.</h3>
+      </div>
+    </div>
+    <!-- ------------------- -->
+
+
+  </main>
+
+
+
+  <script src="assets/js/index.js"></script>
 </body>
+
 </html>

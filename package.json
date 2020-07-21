@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "fonts": "get-google-fonts --overwriting --useragent 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko' --output assets --input 'https://fonts.googleapis.com/css?family=Kanit:300,900'",
     "sync": "browser-sync start --server --files \"**/*\"",
     "dev": "postcss assets/style.tailwind.css --output assets/style.css",
     "watch:dev": "npm run dev -w",
@@ -16,7 +15,6 @@
     "tailwindcss": "^1.4.1"
   },
   "devDependencies": {
-    "get-google-fonts": "^1.2.2",
     "browser-sync": "^2.26.7"
   }
 }

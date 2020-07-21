@@ -2,3 +2,14 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+h1, h2, h3, h4, h5, a, footer {
+  @apply font-quicksand;
+}
+
+p {
+  @apply text-j-gray;
+}
+.hero {
+  background-image: url("img/hero-background.jpg");
+}
