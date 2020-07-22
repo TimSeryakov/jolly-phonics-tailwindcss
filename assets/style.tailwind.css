@@ -13,3 +13,30 @@ p {
 .hero {
   background-image: url("img/hero-background.jpg");
 }
+
+/* Embla Carousel Styles
+   https://github.com/davidcetinkaya/embla-carousel */
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  position: relative;
+  flex: 0 0 100%;
+}
+
+/* Magic Footer Slyles */
+main {
+  min-height: 100vh;
+  background: white;
+  position: relative;
+  z-index: 1;
+}
+footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

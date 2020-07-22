@@ -10,10 +10,10 @@ module.exports = {
     extend: {
       colors: {
         "j-primary": "#4466FF", // brand blue
-        "j-hover": "#4A6FFF", // brand blue
+        "j-secondary": "#4A6FFF", // brand light blue (hover links/buttons)
         "j-gray-200": "#676A7A", // text
-        "j-gray-800": "#454752", // hero
-        "j-gray-600": "#444752", // titles
+        "j-gray-800": "#454752", // hero text
+        "j-gray-600": "#444752", // other titles
       },
       fontFamily: {
         sans: ["Open Sans", ...defaultTheme.fontFamily.sans],
@@ -21,7 +21,7 @@ module.exports = {
       },
       height: {
          hero: '36rem', // height for hero section
-      }
+      },
     },
   },
   variants: {},
