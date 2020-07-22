@@ -10,15 +10,17 @@ module.exports = {
     extend: {
       colors: {
         "j-primary": "#4466FF", // brand blue
-        "j-gray": "#676A7A", // text
-        "j-gray-dark": "#454752", // hero
+        "j-hover": "#4A6FFF", // brand blue
+        "j-gray-200": "#676A7A", // text
+        "j-gray-800": "#454752", // hero
+        "j-gray-600": "#444752", // titles
       },
       fontFamily: {
         sans: ["Open Sans", ...defaultTheme.fontFamily.sans],
         quicksand: ["Quicksand", ...defaultTheme.fontFamily.sans],
       },
       height: {
-         hero: '584px', // height for hero section
+         hero: '36rem', // height for hero section
       }
     },
   },
