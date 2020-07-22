@@ -9,6 +9,7 @@ h1, h2, h3, h4, h5, a, footer {
 
 p {
   @apply text-j-gray-200;
+  @apply font-sans;
 }
 .hero {
   background-image: url("img/hero-background.jpg");

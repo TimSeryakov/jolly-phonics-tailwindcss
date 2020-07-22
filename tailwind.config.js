@@ -20,7 +20,7 @@ module.exports = {
         quicksand: ["Quicksand", ...defaultTheme.fontFamily.sans],
       },
       height: {
-         hero: '36rem', // height for hero section
+         '36rem': '36rem', // height for hero section
       },
     },
   },
@@ -41,17 +41,20 @@ module.exports = {
             marginRight: "auto",
           },
           "@screen md": {
-            maxWidth: "700px",
+            maxWidth: "1000px",
             marginLeft: "auto",
             marginRight: "auto",
           },
           "@screen lg": {
-            maxWidth: "800px",
+            maxWidth: "1000px",
             marginLeft: "auto",
             marginRight: "auto",
           },
           "@screen xl": {
             maxWidth: "960px",
+            // width: "960px",
+            // padding: "0",
+            // margin: "0",
             marginLeft: "auto",
             marginRight: "auto",
           },
