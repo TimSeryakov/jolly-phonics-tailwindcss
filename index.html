@@ -7,153 +7,65 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 
-<body>
-  <!-- HEADER > NAVIGATION-->
-  <header class="w-full h-20 mb-2 shadow-md">
-    <nav class="container flex items-center justify-between h-full">
-      <img src="assets/img/logo.svg" alt="Jolly Phonics Logotype">
-      <ul class="flex">
-        <li><a href="#" class="px-8 py-4 font-extrabold rounded-full outline-none text-j-gray-200 hover:text-j-secondary focus:text-j-secondary focus:shadow-outline">About</a></li>
-        <li><a href="#" class="px-8 py-4 font-extrabold rounded-full outline-none text-j-gray-200 hover:text-j-secondary focus:text-j-secondary focus:shadow-outline">Contact</a></li>
-        <li><a href="#" class="px-8 py-4 ml-4 font-extrabold text-white rounded-full outline-none bg-j-primary hover:bg-j-secondary focus:bg-j-secondary focus:shadow-outline">Sign up</a></li>
-      </ul>
+<body class="antialiased">
+  <header class="shadow-md">
+
+    <nav class="container flex flex-wrap items-center justify-between w-full px-3 md:px-0" x-data="{ isOpen: false }"
+      @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-white' : isOpen , 'bg-white' : !isOpen}">
+
+      <!--Logo etc-->
+      <div class="flex items-center flex-shrink-0 h-20 text-white">
+        <a class="" href="#">
+          <img src="assets/img/logo.svg" alt="Jolly Phonics Logotype">
+        </a>
+      </div>
+
+      <!--Toggle button (hidden on large screens)-->
+      <button @click="isOpen = !isOpen" type="button"
+        class="block px-2 text-j-primary sm:hidden hover:text-j-secondary focus:outline-none focus:text-j-secondary"
+        :class="{ 'transition transform-180': isOpen }">
+        <svg class="w-12 h-12 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path x-show="isOpen" fill-rule="evenodd" clip-rule="evenodd"
+            d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
+          <path x-show="!isOpen" fill-rule="evenodd"
+            d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+        </svg>
+      </button>
+
+      <!--Menu-->
+      <div class="flex-grow w-full sm:flex sm:items-center sm:w-auto"
+        :class="{ 'block': isOpen, 'hidden': !isOpen }" @click.away="isOpen = false" x-show="true"
+        x-transition:enter="ease-out duration-200" x-transition:enter-start="opacity-0 transform"
+        x-transition:enter-end="opacity-100 transform" x-transition:leave="ease-in duration-200"
+        x-transition:leave-start="opacity-100 transform" x-transition:leave-end="opacity-0 transform">
+
+        <ul class="items-center justify-end flex-1 pt-6 sm:pt-0 sm:flex">
+          <li class="">
+            <a class="block px-8 py-4 font-extrabold outline-none md:inline md:rounded-full text-j-gray-200 focus:bg-j-gray-100 active:bg-j-gray-100 md:hover:text-j-secondary md:focus:text-j-secondary md:focus:shadow-outline"
+              href="#" @click="isOpen = false">About</a>
+          </li>
+          <li class="">
+            <a class="block px-8 py-4 font-extrabold outline-none md:inline md:rounded-full text-j-gray-200 focus:bg-j-gray-100 active:bg-j-gray-100 md:hover:text-j-secondary md:focus:text-j-secondary md:focus:shadow-outline"
+              href="#" @click="isOpen = false">Contact</a>
+          </li>
+
+
+          <li class="text-center sm:text-left">
+            <a class="inline-block px-24 py-4 mt-32 mb-10 font-extrabold text-white rounded-full outline-none sm:px-8 sm:mb-0 md:sm-0 sm:inline sm:ml-4 bg-j-primary hover:bg-j-secondary focus:bg-j-secondary focus:shadow-outline"
+              href="#" @click="isOpen = false">Sign up</a>
+          </li>
+
+        </ul>
+
+      </div>
+
     </nav>
+
   </header>
 
 
-  <main>
-
-    <!-- HERO  -->
-    <section class="bg-no-repeat bg-cover hero h-36rem">
-      <div class="container flex flex-col items-center justify-center h-full text-center">
-        <h1 class="w-11/12 text-6xl font-extrabold leading-tight text-j-gray-800">Measure Jolly Phonics projects
-          performance</h1>
-        <h3 class="w-9/12 mt-8 text-2xl font-bold leading-9 text-j-gray-200">High fidelity monitoring and mentoring system
-          at scale, in any context</h3>
-        <a href="#" class="px-24 py-3 mt-8 font-extrabold text-white rounded-full outline-none bg-j-primary hover:bg-j-secondary focus:bg-j-secondary focus:shadow-outline">Sign up</a>
-      </div>
-    </section>
-    <!-- /HERO  -->
-
-    <section class="bg-j-primary">
-      <div class="container flex flex-col items-center">
-        <h3 class="mt-12 text-2xl font-bold text-white">Developed by Jolly Technologies and Jolly Futures.</h3>
-        <h4 class="w-3/6 mt-8 text-base font-bold text-center text-white">Available to any Jolly Futures projects, in collaboration with Universal Learning Solutions.</h4>
-        <img src="assets/img/logo_usl_white.png" class="mt-12 mb-12" alt="Universal Learning Solutions Logotype">
-      </div>
-    </section>
-
-    <!--  -->
-    <section>
-      <div class="container">
-        <h2 class="w-11/12 mx-auto mt-24 mb-20 text-3xl font-bold text-center text-j-gray-600">Jolly Monitor is an app for Jolly Phonics school monitors to collect data during school visits</h2>
-        <img class="w-3/5 mx-auto rounded-md shadow-lg" src="assets/img/app-demo.jpg" alt="Application Demonstration">
-      </div>
-
-      <div class="container flex flex-wrap mt-16 mb-20">
-        <div class="w-1/2 px-8 mt-20">
-          <img src="assets/img/guidance.svg" alt="">
-          <h3 class="mt-3 font-bold tracking-wider uppercase text-j-gray-800">Monitor guidance</h3>
-          <p class="mt-4">The App provides questions about the teacher and school and guides the monitor through a classroom
-            observation.</p>
-        </div>
-        <div class="w-1/2 px-8 mt-20">
-          <img src="assets/img/feedback.svg" alt="">
-          <h3 class="mt-3 font-bold tracking-wider uppercase text-j-gray-800">Instant Mentoring Feedback</h3>
-          <p class="mt-4">The App provides instant feedback to the monitor, and teacher on how the teaching can be improved. At the
-            end of the visit, a report is generated to give to the teacher.</p>
-        </div>
-        <div class="w-1/2 px-8 mt-20">
-          <img src="assets/img/test.svg" alt="">
-          <h3 class="mt-3 font-bold tracking-wider uppercase text-j-gray-800">Pupil Assessments</h3>
-          <p class="mt-4">The App can also be used to assess individual pupils, using the Phonics Screening Check, or another Early
-            Grade Reading Assessment.</p>
-        </div>
-        <div class="w-1/2 px-8 mt-20">
-          <img src="assets/img/dashboard.svg" alt="">
-          <h3 class="mt-3 font-bold tracking-wider uppercase text-j-gray-800">Data dashboard</h3>
-          <p class="mt-4">The monitor has access to all the data from their schools, offline, whether collected themselves or by team
-            members.</p>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="flex items-center h-36rem">
-      <div class="container flex">
-        <div class="w-5/12 pr-10">
-          <h3 class="text-2xl font-bold text-j-gray-600">Analyse the data collected during the visit</h3>
-          <p class="my-6">After the visit, the phone has connects to the Internet and the data sync’s to a Dashboard.</p>
-          <p class="my-6">Analyse the answers from school visits, for an individual project or across projects.</p>
-          <p class="my-6">View the aggregated results from pupil assessments, which make it simple to understand the impact of the intervention.</p>
-        </div>
-
-        <div class="w-7/12">
-          <img src="assets/img/screenshot_01.png" class="ml-auto shadow-lg" height="344px" width="520px" alt="Jolly Monitor Dashboard">
-        </div>
-      </div>
-    </section>
-
-    <section class="flex items-center h-36rem">
-      <div class="container flex">
-      <div class="w-7/12">
-        <img src="assets/img/screenshot_02.png" class="mr-auto shadow-lg" height="344px" width="520px" alt="Jolly Monitor Dashboard Metrics">
-      </div>
-
-        <div class="w-5/12 pl-10">
-          <h3 class="text-2xl font-bold text-j-gray-600">Apply Metrics to Data</h3>
-          <p class="my-6">An advanced metrics system gives us the to understand the data through the lens of pre-defined metrics.</p>
-          <p class="my-6">Each Country, Project, and District is evaluated based on termly metrics.</p>
-          <p class="my-6">Metrics can be mapped to clearly demonstrate where attention should be targeted.</p>
-        </div>
-
-      </div>
-    </section>
-
-    <section>
-      <div class="w-6/12 p-8 mx-auto mb-16">
-        <h2 class="mt-20 text-2xl font-bold text-j-gray-600">The Jolly Monitor system has been rolled out with Universal Learning Solutions across Nigeria, South Africa and Kenya.</h2>
-        <p class="mt-8">It is available to any Jolly Futures projects, we aim to work  with every project, empowering them with the tools that have been so successful with Universal Learning Solutions. </p>
-        <p class="mt-8">Further developments are underway,  to improve the quality of the reports, simplicity of the interface, and accessibility of the data.</p>
-        <img src="assets/img/logo_usl.png" class="mx-auto my-20" alt="Universal Learning Solutions Logotype">
-        <p class="mt-8">Jolly Monitor system is made in Valencia, Spain by <span class="font-bold text-j-secondary">Jolly Technologies</span>, a company dedicated to building technology products that enable the successful teaching of reading and writing, with Jolly Phonics.</p>
-      </div>
-    </section>
-
-<p class="text-white">small-hack</p>
-
-
-  </main>
-
-  <footer class="h-56">
-    <div class="relative h-full bg-j-primary">
-      <div class="container flex pt-10">
-        <div class="w-1/3">
-          <img src="assets/img/logo-white.svg" class="" alt="Jolly Phonics Logotype">
-        </div>
-        <div class="w-1/9">
-          <ul>
-            <li class="mb-3"><a href="#" class="px-3 py-2 text-white rounded-full outline-none hover:text-gray-400 focus:shadow-outline">About</a></li>
-            <li class="mb-3"><a href="#" class="px-3 py-2 text-white rounded-full outline-none hover:text-gray-400 focus:shadow-outline">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="absolute bottom-0 w-full h-12 bg-j-secondary">
-        <div class="container flex items-center h-12 text-white bg-j-secondary">
-          <div class="w-1/3"></div>
-          <div class="w-1/3 text-center"> © 2020 Jolly Monitor</div>
-          <div class="flex justify-end w-1/3">
-            <ul class="flex">
-              <li><a href="#" class="px-3 py-2 text-white rounded-full outline-none hover:text-gray-400 focus:shadow-outline">Legal</a></li>
-              <li><a href="#" class="px-3 py-2 text-white rounded-full outline-none hover:text-gray-400 focus:shadow-outline">Privacy Policy</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
   <script src="assets/js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.5/dist/alpine.js" defer></script>
   <script src="https://unpkg.com/embla-carousel@latest/embla-carousel.umd.js"></script>
 </body>
 

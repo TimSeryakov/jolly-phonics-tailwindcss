@@ -3,7 +3,13 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-h1, h2, h3, h4, h5, a, footer {
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+footer {
   @apply font-quicksand;
 }
 
@@ -11,8 +17,15 @@ p {
   @apply text-j-gray-200;
   @apply font-sans;
 }
+
 .hero {
-  background-image: url("img/hero-background.jpg");
+  background-image: url("img/hero-background-mobile.jpg");
+}
+
+@media (min-width: 1023px) {
+  .hero {
+    background-image: url("img/hero-background.jpg");
+  }
 }
 
 /* Embla Carousel Styles
@@ -29,7 +42,7 @@ p {
 }
 
 /* Magic Footer Slyles */
-main {
+/* main {
   min-height: 100vh;
   background: white;
   position: relative;
@@ -41,4 +54,22 @@ footer {
   left: 0;
   width: 100%;
 }
+ */
 
+
+.duration-200 {
+  transition-duration: 200ms;
+}
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 2, 2);
+}
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 2);
+}
+
+.transition {
+  transition: transform 250ms ease, color 250ms ease;
+}
+.transform-180 {
+  transform: rotate(-180deg);
+}

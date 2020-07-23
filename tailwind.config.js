@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         "j-primary": "#4466FF", // brand blue
         "j-secondary": "#4A6FFF", // brand light blue (hover links/buttons)
+        "j-gray-100": "#F0F1F5", // focused background links mobile menu
         "j-gray-200": "#676A7A", // text
         "j-gray-800": "#454752", // hero text
         "j-gray-600": "#444752", // other titles
@@ -20,6 +21,8 @@ module.exports = {
         quicksand: ["Quicksand", ...defaultTheme.fontFamily.sans],
       },
       height: {
+         '11rem': '11rem',
+         '30rem': '30rem', // height for hero section
          '36rem': '36rem', // height for hero section
       },
     },
@@ -36,7 +39,7 @@ module.exports = {
           marginLeft: "auto",
           marginRight: "auto",
           "@screen sm": {
-            maxWidth: "600px",
+            maxWidth: "100%",
             marginLeft: "auto",
             marginRight: "auto",
           },
