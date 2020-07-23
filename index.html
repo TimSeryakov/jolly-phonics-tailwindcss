@@ -15,7 +15,7 @@
 
       <!--Logo -->
       <div class="flex items-center flex-shrink-0 h-20 text-white">
-        <a class="" href="#">
+        <a class="px-2 py-2 rounded-full outline-none focus:shadow-outline" href="#">
           <img src="assets/img/logo.svg" alt="Jolly Phonics Logotype">
         </a>
       </div>
@@ -42,17 +42,17 @@
         <ul class="items-center justify-end flex-1 pt-6 sm:pt-0 sm:flex">
 
           <li class="">
-            <a class="block px-8 py-4 font-bold outline-none md:inline md:rounded-full text-j-gray-200 focus:bg-j-gray-100 active:bg-j-gray-100 md:hover:text-j-secondary md:focus:text-j-secondary md:focus:shadow-outline"
+            <a class="block px-8 py-4 font-bold outline-none md:inline md:rounded-full text-j-gray-200 focus:md:bg-j-gray-100 active:bg-j-gray-100 md:hover:text-j-secondary md:focus:text-j-secondary md:focus:shadow-outline"
               href="#" @click="isOpen = false">About</a>
           </li>
 
           <li class="">
-            <a class="block px-8 py-4 font-bold outline-none md:inline md:rounded-full text-j-gray-200 focus:bg-j-gray-100 active:bg-j-gray-100 md:hover:text-j-secondary md:focus:text-j-secondary md:focus:shadow-outline"
+            <a class="block px-8 py-4 font-bold outline-none md:inline md:rounded-full text-j-gray-200 focus:md:bg-j-gray-100 active:bg-j-gray-100 md:hover:text-j-secondary md:focus:text-j-secondary md:focus:shadow-outline"
               href="#" @click="isOpen = false">Contact</a>
           </li>
 
           <li class="text-center sm:text-left">
-            <a class="inline-block px-24 py-4 mt-32 mb-10 font-bold text-white rounded-full outline-none sm:px-8 sm:mb-0 md:sm-0 sm:inline sm:ml-4 bg-j-primary hover:bg-j-secondary focus:bg-j-secondary focus:shadow-outline"
+            <a class="inline-block px-24 py-3 mt-32 mb-10 font-bold text-white rounded-full outline-none sm:py-4 sm:px-8 sm:mb-0 md:sm-0 sm:inline sm:ml-4 bg-j-primary hover:bg-j-secondary focus:bg-j-secondary focus:shadow-outline"
               href="#" @click="isOpen = false">Sign up</a>
           </li>
 
@@ -81,36 +81,70 @@
 
     <section>
       <div class="container">
-        <h2 class="w-11/12 mx-auto my-16 text-2xl font-bold md:text-center xl:mt-24 xl:mb-20 xl:text-3xl text-j-gray-600">Jolly Monitor is an app for Jolly Phonics school monitors to collect data during school visits</h2>
-        <img class="mx-auto xl:rounded-md xl:shadow-lg xl:w-3/5" src="assets/img/app-demo.jpg" alt="Application Demonstration">
+        <div class="px-4 mx-auto md:w-11/12 lg:w-8/12 xl:w-full">
+          <h2 class="w-11/12 mx-auto my-16 text-2xl font-bold md:text-center xl:mt-24 xl:mb-20 xl:text-3xl text-j-gray-600">Jolly Monitor is an app for Jolly Phonics school monitors to collect data during school visits</h2>
+          <img class="mx-auto xl:rounded-md xl:shadow-lg xl:w-3/5" src="assets/img/app-demo.jpg" alt="Application Demonstration">
+        </div>
+
+        <div class="flex flex-col flex-wrap mx-auto mt-6 mb-20 xl:mt-16 md:flex-row md:w-11/12 lg:w-8/12 xl:w-full">
+          <div class="px-4 mt-10 xl:px-8 xl:mt-20 md:w-1/2">
+            <img src="assets/img/guidance.svg" alt="">
+            <h3 class="mt-3 font-bold tracking-wider uppercase text-j-gray-800">Monitor guidance</h3>
+            <p class="mt-4">The App provides questions about the teacher and school and guides the monitor through a classroom
+              observation.</p>
+          </div>
+          <div class="px-4 mt-10 xl:px-8 xl:mt-20 md:w-1/2">
+            <img src="assets/img/feedback.svg" alt="">
+            <h3 class="mt-3 font-bold tracking-wider uppercase text-j-gray-800">Instant Mentoring Feedback</h3>
+            <p class="mt-4">The App provides instant feedback to the monitor, and teacher on how the teaching can be improved. At the
+              end of the visit, a report is generated to give to the teacher.</p>
+          </div>
+          <div class="px-4 mt-10 xl:px-8 xl:mt-20 md:w-1/2">
+            <img src="assets/img/test.svg" alt="">
+            <h3 class="mt-3 font-bold tracking-wider uppercase text-j-gray-800">Pupil Assessments</h3>
+            <p class="mt-4">The App can also be used to assess individual pupils, using the Phonics Screening Check, or another Early
+              Grade Reading Assessment.</p>
+          </div>
+          <div class="px-4 mt-10 xl:px-8 xl:mt-20 md:w-1/2">
+            <img src="assets/img/dashboard.svg" alt="">
+            <h3 class="mt-3 font-bold tracking-wider uppercase text-j-gray-800">Data dashboard</h3>
+            <p class="mt-4">The monitor has access to all the data from their schools, offline, whether collected themselves or by team
+              members.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+
+      <div class="container">
+        <div class="flex flex-col px-4 mx-auto md:w-11/12 lg:w-8/12 xl:flex-row-reverse xl:w-full">
+          <div>
+            <img src="assets/img/screenshot_01.png" class="rounded-md shadow-lg" alt="Jolly Monitor Dashboard">
+          </div>
+          <div class="mt-12 xl:mr-20 xl:mt-0">
+            <h2 class="text-2xl font-bold text-j-gray-600">Analyse the data collected during the visit</h2>
+            <p class="mt-4">After the visit, the phone has connects to the Internet and the data sync’s to a Dashboard.</p>
+            <p class="mt-4">Analyse the answers from school visits, for an individual project or across projects.</p>
+            <p class="mt-4">View the aggregated results from pupil assessments, which make it simple to understand the impact of the intervention.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="container flex flex-col flex-wrap mt-6 mb-20 xl:mt-16 md:flex-row">
-        <div class="px-4 mt-10 xl:px-8 xl:mt-20 md:w-1/2">
-          <img src="assets/img/guidance.svg" alt="">
-          <h3 class="mt-3 font-bold tracking-wider uppercase text-j-gray-800">Monitor guidance</h3>
-          <p class="mt-4">The App provides questions about the teacher and school and guides the monitor through a classroom
-            observation.</p>
-        </div>
-        <div class="px-4 mt-10 xl:px-8 xl:mt-20 md:w-1/2">
-          <img src="assets/img/feedback.svg" alt="">
-          <h3 class="mt-3 font-bold tracking-wider uppercase text-j-gray-800">Instant Mentoring Feedback</h3>
-          <p class="mt-4">The App provides instant feedback to the monitor, and teacher on how the teaching can be improved. At the
-            end of the visit, a report is generated to give to the teacher.</p>
-        </div>
-        <div class="px-4 mt-10 xl:px-8 xl:mt-20 md:w-1/2">
-          <img src="assets/img/test.svg" alt="">
-          <h3 class="mt-3 font-bold tracking-wider uppercase text-j-gray-800">Pupil Assessments</h3>
-          <p class="mt-4">The App can also be used to assess individual pupils, using the Phonics Screening Check, or another Early
-            Grade Reading Assessment.</p>
-        </div>
-        <div class="px-4 mt-10 xl:px-8 xl:mt-20 md:w-1/2">
-          <img src="assets/img/dashboard.svg" alt="">
-          <h3 class="mt-3 font-bold tracking-wider uppercase text-j-gray-800">Data dashboard</h3>
-          <p class="mt-4">The monitor has access to all the data from their schools, offline, whether collected themselves or by team
-            members.</p>
+    </section>
+
+    <section>
+
+      <div class="container">
+        <div class="px-4 mx-auto mb-16 md:w-11/12 lg:w-8/12 xl:w-8/12">
+          <h2 class="mt-24 text-2xl font-bold text-j-gray-600">The Jolly Monitor system has been rolled out with Universal Learning Solutions across Nigeria, South Africa and Kenya.</h2>
+          <p class="mt-8">It is available to any Jolly Futures projects, we aim to work  with every project, empowering them with the tools that have been so successful with Universal Learning Solutions. </p>
+          <p class="mt-8">Further developments are underway,  to improve the quality of the reports, simplicity of the interface, and accessibility of the data.</p>
+          <img src="assets/img/logo_usl.png" class="mx-auto my-20" alt="Universal Learning Solutions Logotype">
+          <p class="mt-8">Jolly Monitor system is made in Valencia, Spain by <span class="font-bold text-j-secondary">Jolly Technologies</span>, a company dedicated to building technology products that enable the successful teaching of reading and writing, with Jolly Phonics.</p>
         </div>
       </div>
+
     </section>
 
   </main>
