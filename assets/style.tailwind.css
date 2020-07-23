@@ -48,13 +48,15 @@ p {
   position: relative;
   z-index: 1;
 }
+
 footer {
   position: sticky;
+  position: -webkit-sticky;
   bottom: 0;
   left: 0;
   width: 100%;
-}
- */
+} */
+
 
 
 .duration-200 {
