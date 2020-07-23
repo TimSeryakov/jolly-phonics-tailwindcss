@@ -8,12 +8,12 @@
 </head>
 
 <body class="antialiased">
-  <header class="shadow-md">
+  <header class="fixed top-0 z-10 w-full mb-2 shadow-md">
 
-    <nav class="container flex flex-wrap items-center justify-between w-full px-3 md:px-0" x-data="{ isOpen: false }"
+    <nav class="container flex flex-wrap items-center justify-between w-full px-3 sm:px-0" x-data="{ isOpen: false }"
       @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-white' : isOpen , 'bg-white' : !isOpen}">
 
-      <!--Logo etc-->
+      <!--Logo -->
       <div class="flex items-center flex-shrink-0 h-20 text-white">
         <a class="" href="#">
           <img src="assets/img/logo.svg" alt="Jolly Phonics Logotype">
@@ -40,15 +40,16 @@
         x-transition:leave-start="opacity-100 transform" x-transition:leave-end="opacity-0 transform">
 
         <ul class="items-center justify-end flex-1 pt-6 sm:pt-0 sm:flex">
+
           <li class="">
             <a class="block px-8 py-4 font-extrabold outline-none md:inline md:rounded-full text-j-gray-200 focus:bg-j-gray-100 active:bg-j-gray-100 md:hover:text-j-secondary md:focus:text-j-secondary md:focus:shadow-outline"
               href="#" @click="isOpen = false">About</a>
           </li>
+
           <li class="">
             <a class="block px-8 py-4 font-extrabold outline-none md:inline md:rounded-full text-j-gray-200 focus:bg-j-gray-100 active:bg-j-gray-100 md:hover:text-j-secondary md:focus:text-j-secondary md:focus:shadow-outline"
               href="#" @click="isOpen = false">Contact</a>
           </li>
-
 
           <li class="text-center sm:text-left">
             <a class="inline-block px-24 py-4 mt-32 mb-10 font-extrabold text-white rounded-full outline-none sm:px-8 sm:mb-0 md:sm-0 sm:inline sm:ml-4 bg-j-primary hover:bg-j-secondary focus:bg-j-secondary focus:shadow-outline"
@@ -56,17 +57,27 @@
           </li>
 
         </ul>
-
       </div>
-
     </nav>
-
   </header>
 
+  <main>
 
-  <script src="assets/js/index.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.5/dist/alpine.js" defer></script>
+    <section class="mt-20 bg-cover hero h-36rem">
+      <div class="container flex flex-col items-center justify-center h-full sm:text-center">
+        <h1 class="w-11/12 text-3xl font-extrabold sm:leading-tight sm:text-4xl md:text-5xl lg:text-6xl text-j-gray-800">Measure Jolly Phonics projects performance</h1>
+        <h3 class="w-11/12 mt-8 text-lg sm:font-bold xl:leading-9 sm:text-2xl md:w-8/12 text-j-gray-200">High fidelity monitoring and mentoring system at scale, in any context</h3>
+        <a href="#" class="px-24 py-3 mt-24 font-extrabold text-white rounded-full outline-none sm:mt-8 bg-j-primary hover:bg-j-secondary focus:bg-j-secondary focus:shadow-outline">Sign up</a>
+      </div>
+    </section>
+
+
+  </main>
+
+  <script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.5.0/dist/alpine.min.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.5.0/dist/alpine-ie11.min.js" defer></script> <!-- For IE11 support -->
   <script src="https://unpkg.com/embla-carousel@latest/embla-carousel.umd.js"></script>
+  <script src="assets/js/index.js"></script>
 </body>
 
 </html>

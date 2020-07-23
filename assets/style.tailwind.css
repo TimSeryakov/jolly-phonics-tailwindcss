@@ -22,7 +22,7 @@ p {
   background-image: url("img/hero-background-mobile.jpg");
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 639px) {
   .hero {
     background-image: url("img/hero-background.jpg");
   }
