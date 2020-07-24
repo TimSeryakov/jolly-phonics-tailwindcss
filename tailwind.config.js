@@ -11,6 +11,8 @@ module.exports = {
       colors: {
         "j-primary": "#4466FF", // brand blue
         "j-secondary": "#4A6FFF", // brand light blue (hover links/buttons)
+        "j-gray-50": "#FAFBFF", // bg in one section
+        "j-gray-75": "#F0F1F5", // line
         "j-gray-100": "#F0F1F5", // focused background links mobile menu
         "j-gray-200": "#676A7A", // text
         "j-gray-800": "#454752", // hero text

@@ -10,14 +10,14 @@
 
 <body class="antialiased">
 
-  <header class="fixed top-0 z-10 w-full mb-2 bg-white shadow-md">
+  <header class="fixed top-0 z-10 w-full mb-2 bg-white border-t-2 shadow-md border-j-secondary">
 
     <nav class="container flex flex-wrap items-center justify-between w-full px-3 sm:px-0" x-data="{ isOpen: false }"
       @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-white' : isOpen , 'bg-white' : !isOpen}">
 
       <!--Logo -->
       <div class="flex items-center flex-shrink-0 h-20 text-white">
-        <a class="px-2 py-2 rounded-full outline-none focus:shadow-outline" href="#">
+        <a class="px-2 py-2 rounded-full outline-none" href="#">
           <img src="assets/img/logo.svg" alt="Jolly Phonics Logotype">
         </a>
       </div>
@@ -44,17 +44,17 @@
         <ul class="items-center justify-end flex-1 pt-6 sm:pt-0 sm:flex">
 
           <li class="">
-            <a class="block px-8 py-4 font-bold outline-none md:inline md:rounded-full text-j-gray-200 focus:md:bg-j-gray-100 active:bg-j-gray-100 md:hover:text-j-secondary md:focus:text-j-secondary md:focus:shadow-outline"
+            <a class="block px-8 py-4 font-bold outline-none md:inline md:rounded-full text-j-gray-200 focus:md:bg-j-gray-100 active:bg-j-gray-100 md:hover:text-j-secondary"
               href="#" @click="isOpen = false">About</a>
           </li>
 
           <li class="">
-            <a class="block px-8 py-4 font-bold outline-none md:inline md:rounded-full text-j-gray-200 focus:md:bg-j-gray-100 active:bg-j-gray-100 md:hover:text-j-secondary md:focus:text-j-secondary md:focus:shadow-outline"
+            <a class="block px-8 py-4 font-bold outline-none md:inline md:rounded-full text-j-gray-200 focus:md:bg-j-gray-100 active:bg-j-gray-100 md:hover:text-j-secondary"
               href="#" @click="isOpen = false">Contact</a>
           </li>
 
           <li class="text-center sm:text-left">
-            <a class="inline-block px-24 py-3 mt-32 mb-10 font-bold text-white rounded-full outline-none sm:py-4 sm:px-8 sm:mb-0 md:sm-0 sm:inline sm:ml-4 bg-j-primary hover:bg-j-secondary focus:bg-j-secondary focus:shadow-outline"
+            <a class="inline-block px-24 py-3 mt-32 mb-10 font-bold text-white rounded-full outline-none sm:py-4 sm:px-8 sm:mb-0 md:sm-0 sm:inline sm:ml-4 bg-j-primary hover:bg-j-secondary focus:bg-j-secondary"
               href="#" @click="isOpen = false">Sign up</a>
           </li>
 
@@ -67,10 +67,11 @@
 
 
     <section class="mt-20 bg-cover hero h-36rem">
-      <div class="container flex flex-col items-center justify-center h-full sm:text-center">
-        <h1 class="w-11/12 text-3xl font-bold sm:leading-tight sm:text-4xl md:text-5xl lg:text-6xl text-j-gray-800 animate__animated animate__fadeIn wow" data-wow-delay="0s">Measure Jolly Phonics projects performance</h1>
-        <h3 class="w-11/12 mt-8 text-lg sm:font-bold xl:leading-9 sm:text-2xl md:w-8/12 text-j-gray-200 animate__animated animate__fadeIn wow" data-wow-delay="0.2s">High fidelity monitoring and mentoring system at scale, in any context</h3>
-        <a href="#" class="px-24 py-3 mt-24 font-bold text-white rounded-full outline-none sm:mt-8 bg-j-primary hover:bg-j-secondary focus:bg-j-secondary focus:shadow-outline animate__animated animate__fadeIn wow" data-wow-delay="0.4s">Sign up</a>
+      <div class="container flex flex-col items-center justify-center h-full px-4 sm:text-center">
+        <h1 class="text-4xl font-bold sm:leading-tight sm:text-4xl md:text-5xl lg:text-6xl text-j-gray-800 animate__animated animate__fadeIn wow" data-wow-delay="0s">Measure Jolly Phonics projects performance</h1>
+        <h3 class="mt-8 text-lg sm:font-bold xl:leading-9 sm:text-2xl md:w-8/12 text-j-gray-200 animate__animated animate__fadeIn wow" data-wow-delay="0.2s">High fidelity monitoring and mentoring system at scale, in any context</h3>
+        <div class="h-150px sm:h-100px"></div>
+        <a href="#" class="w-full py-3 font-bold text-center text-white rounded-full outline-none sm:w-auto sm:px-24 xl:px-32 bg-j-primary hover:bg-j-secondary focus:bg-j-secondary focus:shadow-outline animate__animated animate__fadeIn wow" data-wow-delay="0.4s">Sign up</a>
       </div>
     </section>
 
@@ -79,7 +80,7 @@
       <div class="container flex flex-col items-center px-3 py-16">
         <h3 class="text-lg font-bold text-center text-white xl:text-3xl animate__animated animate__fadeIn wow">Developed by Jolly Technologies.</h3>
         <h4 class="w-10/12 mt-8 text-base text-center text-white xl:font-bold xl:text-xl sm:w-6/12 animate__animated animate__fadeIn wow">Available to any Jolly Futures projects, in collaboration with Universal Learning Solutions.</h4>
-        <img src="assets/img/logo_usl_white.png" class="mx-auto mt-8 animate__animated animate__fadeIn wow" alt="Universal Learning Solutions Logotype">
+        <img src="assets/img/LogoUSL_white.svg" class="mx-auto mt-8 animate__animated animate__fadeIn wow" alt="Universal Learning Solutions Logotype">
       </div>
     </section>
 
@@ -119,12 +120,13 @@
           </div>
         </div>
       </div>
+      <div class="h-50px"></div>
     </section>
 
-    <div class="h-100px"></div>
 
 
-    <section>
+    <section class="bg-j-gray-50">
+      <div class="h-50px"></div>
       <div class="container">
         <div class="px-5">
           <h2 class="text-4xl font-bold text-j-gray-600">The app in action</h2>
@@ -148,7 +150,7 @@
 
     <div class="h-50px sm:h-100px"></div>
 
-    <section>
+    <section class="bg-j-gray-50">
       <div class="container flex flex-col items-center px-4 md:flex-row md:flex-wrap">
         <div class="flex flex-col items-center justify-center h-40 text-center animate__animated animate__fadeIn wow md:w-1/3 md:justify-start md:h-48 lg:h-56">
           <h3 class="text-4xl font-bold text-j-gray-800">1,026</h3>
@@ -176,11 +178,12 @@
         </div>
       </div>
 
+      <div class="h-50px md:h-25px xl:h-50px"></div>
     </section>
 
-    <div class="h-100px md:h-50px xl:h-100px"></div>
 
     <section>
+      <div class="h-50px md:h-25px xl:h-50px"></div>
       <div class="container animate__animated animate__fadeIn wow">
         <div class="flex flex-col px-4 mx-auto md:w-11/12 lg:w-8/12 xl:flex-row-reverse xl:w-full">
           <div>
@@ -194,41 +197,44 @@
           </div>
         </div>
       </div>
+      <div class="h-75px xl:h-100px"></div>
     </section>
 
-    <div class="h-150px xl:h-200px"></div>
 
     <section>
+      <div class="h-75px xl:h-100px"></div>
       <div class="container animate__animated animate__fadeIn wow">
         <div class="flex flex-col px-4 mx-auto md:w-11/12 lg:w-8/12 xl:flex-row xl:w-full">
           <div>
             <img src="assets/img/screenshot_02.png" class="rounded-md shadow-lg" alt="Jolly Monitor Dashboard">
           </div>
           <div class="mt-12 xl:ml-20 xl:mt-0">
-            <h2 class="text-2xl font-bold text-j-gray-600">Analyse the data collected during the visit</h2>
-            <p class="mt-4">After the visit, the phone has connects to the Internet and the data sync’s to a Dashboard.</p>
-            <p class="mt-4">Analyse the answers from school visits, for an individual project or across projects.</p>
-            <p class="mt-4">View the aggregated results from pupil assessments, which make it simple to understand the impact of the intervention.</p>
+            <h2 class="text-2xl font-bold text-j-gray-600">Apply Metrics to Data</h2>
+            <p class="mt-4">An advanced metrics system gives us the to understand the data through the lens of pre-defined metrics.</p>
+            <p class="mt-4">Each Country, Project, and District is evaluated based on termly metrics.</p>
+            <p class="mt-4">Metrics can be mapped to clearly demonstrate where attention should be targeted.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="h-50px xl:h-100px"></div>
+    <div class="h-50px xl:h-75px"></div>
 
-    <section>
-      <div class="container animate__animated animate__fadeIn wow">
+    <section class="bg-j-gray-50 animate__animated animate__fadeIn wow">
+      <div class="h-50px xl:h-75px"></div>
+      <div class="container">
         <div class="px-4 mx-auto md:w-11/12 lg:w-8/12 xl:w-8/12">
-          <h2 class="mt-24 text-2xl font-bold text-j-gray-600">The Jolly Monitor system has been rolled out with Universal Learning Solutions across Nigeria, South Africa and Kenya.</h2>
+          <h2 class="text-2xl font-bold text-j-gray-600">The Jolly Monitor system has been rolled out with Universal Learning Solutions across Nigeria, South Africa and Kenya.</h2>
           <p class="mt-8">It is available to any Jolly Futures projects, we aim to work  with every project, empowering them with the tools that have been so successful with Universal Learning Solutions. </p>
           <p class="mt-8">Further developments are underway,  to improve the quality of the reports, simplicity of the interface, and accessibility of the data.</p>
-          <img src="assets/img/logo_usl.png" class="mx-auto my-20" alt="Universal Learning Solutions Logotype">
+          <img src="assets/img/LogoUSL.svg" class="mx-auto my-16" alt="Universal Learning Solutions Logotype">
+          <div class="w-full border-t border-j-gray-75"></div>
           <p class="mt-8">Jolly Monitor system is made in Valencia, Spain by <span class="font-bold text-j-secondary">Jolly Technologies</span>, a company dedicated to building technology products that enable the successful teaching of reading and writing, with Jolly Phonics.</p>
         </div>
       </div>
+      <div class="h-100px"></div>
     </section>
 
-    <div class="h-150px"></div>
 
 
   </main>
@@ -242,8 +248,8 @@
       </div>
       <div class="w-1/2 px-4 lg:w-9/12">
         <ul>
-          <li class="mb-8"><a href="#" class="px-3 py-2 text-white rounded-full outline-none hover:text-gray-400 focus:shadow-outline">About</a></li>
-          <li class="mb-8"><a href="#" class="px-3 py-2 text-white rounded-full outline-none hover:text-gray-400 focus:shadow-outline">Contact</a></li>
+          <li class="mb-8"><a href="#" class="px-3 py-2 text-white rounded-full outline-none hover:text-gray-400">About</a></li>
+          <li class="mb-8"><a href="#" class="px-3 py-2 text-white rounded-full outline-none hover:text-gray-400">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -251,12 +257,12 @@
       <div class="container flex items-center h-12 px-4 md:justify-center">
         <div class="hidden w-1/3 xl:block"></div>
         <div class="flex items-center h-full md:w-1/3 md:justify-center">
-          <p class="text-white font-quicksand">© 2020 Jolly Monitor</p>
+          <p class="text-sm text-white font-quicksand">© 2020 Jolly Monitor</p>
         </div>
         <div class="hidden w-1/3 xl:flex xl:justify-end">
           <ul class="flex">
-            <li><a href="#" class="px-3 py-2 text-white rounded-full outline-none hover:text-gray-400 focus:shadow-outline">Legal</a></li>
-            <li><a href="#" class="px-3 py-2 text-white rounded-full outline-none hover:text-gray-400 focus:shadow-outline">Privacy Policy</a></li>
+            <li><a href="#" class="px-3 py-2 text-sm text-white rounded-full outline-none hover:text-gray-400">Legal</a></li>
+            <li><a href="#" class="px-3 py-2 text-sm text-white rounded-full outline-none hover:text-gray-400">Privacy Policy</a></li>
           </ul>
         </div>
       </div>
