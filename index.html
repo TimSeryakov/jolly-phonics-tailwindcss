@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jolly Monitor</title>
   <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="assets/animate.min.css">
 </head>
 
 <body class="antialiased">
@@ -24,7 +23,7 @@
 
       <!--Toggle button (hidden on large screens)-->
       <button @click="isOpen = !isOpen" type="button"
-        class="block px-2 text-j-primary sm:hidden hover:text-j-secondary focus:outline-none focus:text-j-secondary"
+        class="block px-2 text-j-primary sm:hidden hover:text-j-hover focus:outline-none focus:text-j-hover"
         :class="{ 'transition transform-180': isOpen }">
         <svg class="w-12 h-12 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path x-show="isOpen" fill-rule="evenodd" clip-rule="evenodd"
@@ -44,18 +43,13 @@
         <ul class="items-center justify-end flex-1 pt-6 sm:pt-0 sm:flex">
 
           <li class="">
-            <a class="block px-8 py-4 font-bold outline-none md:inline md:rounded-full text-j-gray-200 focus:md:bg-j-gray-100 active:bg-j-gray-100 md:hover:text-j-secondary"
-              href="#" @click="isOpen = false">About</a>
-          </li>
-
-          <li class="">
-            <a class="block px-8 py-4 font-bold outline-none md:inline md:rounded-full text-j-gray-200 focus:md:bg-j-gray-100 active:bg-j-gray-100 md:hover:text-j-secondary"
-              href="#" @click="isOpen = false">Contact</a>
+            <a class="block px-8 py-4 font-bold outline-none md:inline md:rounded-full text-j-gray-200 hover:bg-j-gray-100 md:hover:bg-transparent md:active:bg-transparent md:focus:bg-transparent active:bg-j-gray-100 md:hover:text-j-hover"
+              href="#about" @click="isOpen = false">About</a>
           </li>
 
           <li class="text-center sm:text-left">
-            <a class="inline-block px-24 py-3 mt-32 mb-10 font-bold text-white rounded-full outline-none sm:py-4 sm:px-8 sm:mb-0 md:sm-0 sm:inline sm:ml-4 bg-j-primary hover:bg-j-secondary focus:bg-j-secondary"
-              href="#" @click="isOpen = false">Sign up</a>
+            <a class="inline-block px-24 py-3 mt-32 mb-10 font-bold text-white rounded-full outline-none sm:py-4 sm:px-8 sm:mb-0 md:sm-0 sm:inline sm:ml-4 bg-j-primary hover:bg-j-hover focus:bg-j-hover"
+              href="#" @click="isOpen = false">Log in</a>
           </li>
 
         </ul>
@@ -71,7 +65,7 @@
         <h1 class="text-4xl font-bold sm:leading-tight sm:text-4xl md:text-5xl lg:text-6xl text-j-gray-800 animate__animated animate__fadeIn wow" data-wow-delay="0s">Measure Jolly Phonics projects performance</h1>
         <h3 class="mt-8 text-lg sm:font-bold xl:leading-9 sm:text-2xl md:w-8/12 text-j-gray-200 animate__animated animate__fadeIn wow" data-wow-delay="0.2s">High fidelity monitoring and mentoring system at scale, in any context</h3>
         <div class="h-150px sm:h-100px"></div>
-        <a href="#" class="w-full py-3 font-bold text-center text-white rounded-full outline-none sm:w-auto sm:px-24 xl:px-32 bg-j-primary hover:bg-j-secondary focus:bg-j-secondary focus:shadow-outline animate__animated animate__fadeIn wow" data-wow-delay="0.4s">Sign up</a>
+        <a href="#" class="w-full py-3 font-bold text-center text-white rounded-full outline-none sm:w-auto sm:px-24 xl:px-32 bg-j-primary hover:bg-j-hover focus:bg-j-hover animate__animated animate__fadeIn wow" data-wow-delay="0.4s">Log in</a>
       </div>
     </section>
 
@@ -218,7 +212,7 @@
       </div>
     </section>
 
-    <div class="h-50px xl:h-75px"></div>
+    <div class="h-50px xl:h-75px" id="about"></div>
 
     <section class="bg-j-gray-50 animate__animated animate__fadeIn wow">
       <div class="h-50px xl:h-75px"></div>
@@ -270,11 +264,13 @@
   </footer>
 
 
+
   <script type="module" src="assets/js/alpine.min.js"></script>
   <script nomodule src="assets/js/alpine-ie11.min.js" defer></script> <!-- For IE11 support -->
   <script src="assets/js/wow.min.js"></script>
   <script src="assets/js/siema.min.js"></script>
   <script src="assets/js/app.js"></script>
+
 </body>
 
 </html>

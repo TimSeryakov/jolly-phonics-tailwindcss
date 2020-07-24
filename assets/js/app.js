@@ -1,3 +1,4 @@
+// Animation on Scroll lib init
 new WOW(
   {
     offset: 0,
@@ -7,7 +8,7 @@ new WOW(
 ).init();
 
 
-
+// Slider settings
 const siemaOne = new Siema({
   selector: '.siemaOne',
   duration: 200,
@@ -47,3 +48,4 @@ const siemaTwo = new Siema({
   onInit: () => {},
   onChange: () => {},
 });
+
