@@ -21,9 +21,9 @@ module.exports = {
         quicksand: ["Quicksand", ...defaultTheme.fontFamily.sans],
       },
       height: {
-         '11rem': '11rem',
-         '30rem': '30rem', // height for hero section
-         '36rem': '36rem', // height for hero section
+        "11rem": "11rem",
+        "30rem": "30rem", // height for hero section
+        "36rem": "36rem", // height for hero section
       },
     },
   },
@@ -32,6 +32,14 @@ module.exports = {
     container: false,
   },
   plugins: [
+    require("tailwindcss-pixel-dimensions")({
+      width: {
+        total: 500, // 900 is the default
+      },
+      height: {
+        total: 500, // 900 is the default
+      },
+    }),
     function ({ addComponents }) {
       addComponents({
         ".container": {

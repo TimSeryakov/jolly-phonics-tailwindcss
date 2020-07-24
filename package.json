@@ -14,6 +14,7 @@
     "postcss-cli": "^7.1.0",
     "postcss-import": "^12.0.1",
     "tailwindcss": "^1.4.1",
+    "tailwindcss-pixel-dimensions": "^1.0.2",
     "wow.js": "^1.2.2"
   },
   "devDependencies": {
