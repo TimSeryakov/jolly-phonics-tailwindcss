@@ -7,12 +7,14 @@
     "watch": "run-p watch:dev sync"
   },
   "dependencies": {
+    "alpinejs": "^2.5.0",
     "animate.css": "^4.1.0",
     "autoprefixer": "^9.7.6",
     "cssnano": "^4.1.10",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^7.1.0",
     "postcss-import": "^12.0.1",
+    "siema": "^1.5.1",
     "tailwindcss": "^1.4.1",
     "tailwindcss-pixel-dimensions": "^1.0.2",
     "wow.js": "^1.2.2"
