@@ -10,11 +10,11 @@ module.exports = {
     extend: {
       colors: {
         "j-primary": "#4466FF", // brand blue
-        "j-secondary": "#4A6FFF", // brand light blue (hover links/buttons)
+        "j-secondary": "#4A6FFF", // brand light blue
         "j-hover": "#4161E3", // button and link hover
-        "j-gray-50": "#FAFBFF", // bg in one section
-        "j-gray-75": "#F0F1F5", // line
-        "j-gray-100": "#F0F1F5", // focus and hover background links mobile menu
+        "j-gray-50": "#FAFBFF", // bg in few section
+        "j-gray-75": "#F0F1F5", // line in about section
+        "j-gray-100": "#F0F1F5", // focus and hover background links in mobile menu
         "j-gray-200": "#676A7A", // text
         "j-gray-800": "#454752", // hero text
         "j-gray-600": "#444752", // other titles
@@ -24,8 +24,6 @@ module.exports = {
         quicksand: ["Quicksand", ...defaultTheme.fontFamily.sans],
       },
       height: {
-        "11rem": "11rem",
-        "30rem": "30rem", // height for hero section
         "36rem": "36rem", // height for hero section
       },
     },
@@ -66,9 +64,6 @@ module.exports = {
           },
           "@screen xl": {
             maxWidth: "960px",
-            // width: "960px",
-            // padding: "0",
-            // margin: "0",
             marginLeft: "auto",
             marginRight: "auto",
           },

@@ -11,6 +11,7 @@
        url('fonts/quicksand-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('fonts/quicksand-v21-latin-regular.svg#Quicksand') format('svg'); /* Legacy iOS */
 }
+
 /* quicksand-500 */
 @font-face {
   font-family: 'Quicksand';

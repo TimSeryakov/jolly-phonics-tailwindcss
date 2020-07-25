@@ -4,6 +4,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/* Base Styles */
 h1,
 h2,
 h3,
@@ -29,20 +30,7 @@ p {
   }
 }
 
-/* Embla Carousel Styles
-   https://github.com/davidcetinkaya/embla-carousel */
-.embla {
-  overflow: hidden;
-}
-.embla__container {
-  display: flex;
-}
-.embla__slide {
-  position: relative;
-  flex: 0 0 100%;
-}
-
-/* Magic Footer Slyles */
+/* Slideout Footer Slyles */
 main {
   min-height: 100vh;
   background: white;
@@ -59,7 +47,7 @@ footer {
 }
 
 
-
+/* Mobile Menu Button Animation Styles */
 .duration-200 {
   transition-duration: 200ms;
 }
